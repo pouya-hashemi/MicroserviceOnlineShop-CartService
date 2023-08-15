@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "WyJIpNJww619h8xxGPWPP1++rX1TlZVPVbwqQxGY8UbSAJi9RlD6A6HdByg2wkqqw4YAZ3eB8/xmnl3une+4HQ==",
+  "success": true,
+  "projectFilePath": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DPUser06\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\DPUser06\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\DPUser06\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\DPUser06\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\DPUser06\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\DPUser06\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
