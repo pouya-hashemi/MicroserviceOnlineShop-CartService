@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using OnlineShopMicroService.CartService.WebApi.Interface;
+using OnlineShopMicroService.CartService.WebApi.Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,7 +11,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var cn = builder.Configuration.GetConnectionString("DefaultConnection");
+
+
+builder.Services.AddDbContext<ApplicationDbContext>(p => p.UseSqlServer(cn));
+builder.Services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
+
+
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
