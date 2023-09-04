@@ -1,6 +1,8 @@
+using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using OnlineShopMicroService.CartService.WebApi.Interface;
 using OnlineShopMicroService.CartService.WebApi.Persistence;
+using OnlineShopMicroService.CartService.WebApi.Services.Commands;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +18,8 @@ var cn = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<ApplicationDbContext>(p => p.UseSqlServer(cn));
 builder.Services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
+
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
 
 var app = builder.Build();

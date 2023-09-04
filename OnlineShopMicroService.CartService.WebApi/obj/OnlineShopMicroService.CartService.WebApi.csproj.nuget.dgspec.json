@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj": {}
+    "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.Webapi.csproj": {}
   },
   "projects": {
-    "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj": {
+    "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.Webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj",
-        "projectName": "OnlineShopMicroService.CartService.WebApi",
-        "projectPath": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj",
+        "projectUniqueName": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.Webapi.csproj",
+        "projectName": "OnlineShopMicroService.CartService.Webapi",
+        "projectPath": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.Webapi.csproj",
         "packagesPath": "C:\\Users\\DPUser06\\.nuget\\packages\\",
         "outputPath": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\obj\\",
         "projectStyle": "PackageReference",
@@ -45,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.21, )"

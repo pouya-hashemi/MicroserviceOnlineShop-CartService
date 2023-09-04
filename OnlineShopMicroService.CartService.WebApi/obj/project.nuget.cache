@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "gLnpWV7TSa2x39KGVClhT87tX9gtcD2W7UUUKcW8O9TsGXDnjJJ5Zi4ex5EZhmsy/tKuUYHMf2WGf9ApAhBstw==",
+  "dgSpecHash": "Bpvw6Gox2liSDNw5MwosOo/84RcSOSspQCkrTwcDmsEF0AGbTKJu9Zcx41hQVSYoTnb9536cICgS+6lPwu2apA==",
   "success": true,
-  "projectFilePath": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj",
+  "projectFilePath": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.Webapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DPUser06\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\DPUser06\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\DPUser06\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\DPUser06\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\DPUser06\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
