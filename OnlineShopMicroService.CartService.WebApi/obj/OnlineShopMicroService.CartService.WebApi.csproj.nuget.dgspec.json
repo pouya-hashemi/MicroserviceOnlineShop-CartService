@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.Webapi.csproj": {}
+    "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj": {}
   },
   "projects": {
-    "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.Webapi.csproj": {
+    "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.Webapi.csproj",
-        "projectName": "OnlineShopMicroService.CartService.Webapi",
-        "projectPath": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.Webapi.csproj",
+        "projectUniqueName": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj",
+        "projectName": "OnlineShopMicroService.CartService.WebApi",
+        "projectPath": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj",
         "packagesPath": "C:\\Users\\DPUser06\\.nuget\\packages\\",
         "outputPath": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\obj\\",
         "projectStyle": "PackageReference",

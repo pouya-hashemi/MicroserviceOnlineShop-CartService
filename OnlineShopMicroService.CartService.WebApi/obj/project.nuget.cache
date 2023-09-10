@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bpvw6Gox2liSDNw5MwosOo/84RcSOSspQCkrTwcDmsEF0AGbTKJu9Zcx41hQVSYoTnb9536cICgS+6lPwu2apA==",
+  "dgSpecHash": "JP911QMgCQLXQ1p7o2+Zmfr10mSf+xUvYuJroZDzke+bLuCD4H3ycB/lQbHssSLOok8Tlr7012gz303g+zd7Gw==",
   "success": true,
-  "projectFilePath": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.Webapi.csproj",
+  "projectFilePath": "D:\\privateFarima\\private\\OnlineShopMicroService.CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DPUser06\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\DPUser06\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
