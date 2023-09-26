@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="MediatR" Version="12.1.1" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.21" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.21">
           <PrivateAssets>all</PrivateAssets>
@@ -18,13 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Exceptions" />
-      <Folder Include="Models\Dtos" />
-      <Folder Include="Models\Entities" />
-      <Folder Include="Persistence\Configurations" />
       <Folder Include="Persistence\Migrations" />
-      <Folder Include="Services" />
-      <Folder Include="WebUi" />
     </ItemGroup>
 
 </Project>

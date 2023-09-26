@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Od88iIcaQ9LRurPapBJk4WHzlfpAvSr2vNFrU1cdmm0=",
+  "Source": "OnlineShopMicroService.CartService.WebApi",
+  "BasePath": "_content/OnlineShopMicroService.CartService.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
