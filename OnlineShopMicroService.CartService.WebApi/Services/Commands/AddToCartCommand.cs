@@ -2,11 +2,12 @@
 using Microsoft.EntityFrameworkCore;
 using OnlineShopMicroService.CartService.WebApi.Exceptions;
 using OnlineShopMicroService.CartService.WebApi.Interface;
+using OnlineShopMicroService.CartService.WebApi.Models.Dtos;
 using OnlineShopMicroService.CartService.WebApi.Models.Entities;
 
 namespace OnlineShopMicroService.CartService.WebApi.Services.Commands;
 
-public class AddToCartCommand : IRequest<string>
+public class AddToCartCommand : IRequest<CartReadDto>
 {
     public Guid Token { get; set; }
     public int CustomerId { get; set; }
@@ -14,7 +15,7 @@ public class AddToCartCommand : IRequest<string>
     public int Quantities { get; set; }
 }
 
-public class AddCartHandler : IRequestHandler<AddToCartCommand, string>
+public class AddCartHandler : IRequestHandler<AddToCartCommand, CartReadDto>
 {
     private readonly IApplicationDbContext _context;
 
@@ -24,56 +25,44 @@ public class AddCartHandler : IRequestHandler<AddToCartCommand, string>
         _context = context;
     }
 
-    public async Task<string> Handle(AddToCartCommand request, CancellationToken cancellationToken)
+    public async Task<CartReadDto> Handle(AddToCartCommand request, CancellationToken cancellationToken)
     {
-        var cartExisted = _context.Carts.FirstOrDefault(w => w.CustomerId == request.CustomerId);
-        
-        
+        //validation
+        var cart = await _context.Carts.FirstOrDefaultAsync(w => w.CustomerId == request.CustomerId);
 
-        if (cartExisted != null)
+        if (request.Quantities < 1)
         {
-            if (request.Quantities < 1)
-            {
-                throw new BadRequestException("count of products can not be less than one");
-            }
-
-            var item = new CartItem()
-            {
-                CartId = cartExisted.CartId,
-                Quantity = request.Quantities,
-                ProductId = request.ProductIds,
-    
-            };
-            _context.CartItems.Add(item);
-            
-           
+            throw new BadRequestException("count of products can not be less than one");
         }
-        else
+
+
+        if (cart != null)
         {
-            
-            var cart = new Cart()
-            {
-                CustomerId = request.CustomerId,
-                DateCreated = DateTime.Today,
-                Token = request.Token,
-                
-            };
-
-            _context.Carts.Add(cart);
-            
-            await _context.SaveChangesAsync(cancellationToken);
-
-            if (request.Quantities < 1)
-            {
-                throw new BadRequestException("count of products can not be less than one");
-            }
 
             var item = new CartItem()
             {
                 CartId = cart.CartId,
                 Quantity = request.Quantities,
                 ProductId = request.ProductIds,
-                
+
+            };
+            _context.CartItems.Add(item);
+
+
+        }
+        else
+        {
+
+            cart = new Cart(request.Token, request.CustomerId);
+
+            _context.Carts.Add(cart);
+
+            var item = new CartItem()
+            {
+                CartId = cart.CartId,
+                Quantity = request.Quantities,
+                ProductId = request.ProductIds,
+
             };
             _context.CartItems.Add(item);
         }
@@ -81,6 +70,10 @@ public class AddCartHandler : IRequestHandler<AddToCartCommand, string>
 
         await _context.SaveChangesAsync(cancellationToken);
 
-        return "Success";
+        return new CartReadDto() {
+            Id = cart.CartId,
+            Token=cart.Token,
+            CustomerId=request.CustomerId,
+        };
     }
 }

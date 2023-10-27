@@ -11,22 +11,22 @@ public class CartsController : OnlineShopMicroServiceBaseController
 {
     //Create Cart
     [HttpPost]
-    public async Task<ActionResult<string>> Add([FromBody]AddToCartCommand request)
+    public async Task<IActionResult> Create([FromBody]AddToCartCommand request)
     {
-        var result = await Mediator.Send(request);
-        return result;
+        var cart = await Mediator.Send(request);
+        return CreatedAtAction("GetById", new { id = cart.Id }, cart);
         
     }
     
     
     //Delete CartItem
     [HttpDelete("{id}")]
-    public async Task<ActionResult> Delete(int id,[FromForm] DeleteCartItemCommand command)
+    public async Task<IActionResult> Delete(int id)
     {
-        if (command.CartId!=id)
+        var command = new DeleteCartItemCommand()
         {
-            throw new NotFoundException("CartId Not Found");
-        }
+            CartId=id
+        };
         await Mediator.Send(command);
         return NoContent();
     }
@@ -34,22 +34,25 @@ public class CartsController : OnlineShopMicroServiceBaseController
     
     //Get All CartItem
     [HttpGet]
-    public async Task<List<CartsDto>> GetAll([FromQuery] GetCartsListQuery query)
+    public async Task<IActionResult> Get([FromQuery] GetCartsListQuery query)
     {
-        return await Mediator.Send(query);
-        
-
+        var list = await Mediator.Send(query);
+        return Ok(list);
     }
     
     [HttpGet("{id}")]
-    public async Task<List<CartsDto>> GetById(int id)
+    public async Task<IActionResult> GetById(int id)
     {
-        return await Mediator.Send(new GetCartsListByIdQuery()
+        var cart= await Mediator.Send(new GetCartsListByIdQuery()
         {
-            cartId= id
+            cartId = id
         });
+
+        if (cart is null)
+            return NotFound();
+
+        return Ok(cart);
         
     }
-
 
 }
