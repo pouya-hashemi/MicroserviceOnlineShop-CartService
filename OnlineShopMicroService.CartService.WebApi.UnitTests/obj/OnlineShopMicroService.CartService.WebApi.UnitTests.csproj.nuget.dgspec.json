@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pouya\\Source\\Repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi.UnitTests\\OnlineShopMicroService.CartService.WebApi.UnitTests.csproj": {}
+    "C:\\Users\\Pouya\\source\\repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi.UnitTests\\OnlineShopMicroService.CartService.WebApi.UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pouya\\Source\\Repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi.UnitTests\\OnlineShopMicroService.CartService.WebApi.UnitTests.csproj": {
+    "C:\\Users\\Pouya\\source\\repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi.UnitTests\\OnlineShopMicroService.CartService.WebApi.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pouya\\Source\\Repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi.UnitTests\\OnlineShopMicroService.CartService.WebApi.UnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\Pouya\\source\\repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi.UnitTests\\OnlineShopMicroService.CartService.WebApi.UnitTests.csproj",
         "projectName": "OnlineShopMicroService.CartService.WebApi.UnitTests",
-        "projectPath": "C:\\Users\\Pouya\\Source\\Repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi.UnitTests\\OnlineShopMicroService.CartService.WebApi.UnitTests.csproj",
+        "projectPath": "C:\\Users\\Pouya\\source\\repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi.UnitTests\\OnlineShopMicroService.CartService.WebApi.UnitTests.csproj",
         "packagesPath": "C:\\Users\\Pouya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pouya\\Source\\Repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi.UnitTests\\obj\\",
+        "outputPath": "C:\\Users\\Pouya\\source\\repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pouya\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Pouya\\Source\\Repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj": {
-                "projectPath": "C:\\Users\\Pouya\\Source\\Repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj"
+              "C:\\Users\\Pouya\\source\\repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj": {
+                "projectPath": "C:\\Users\\Pouya\\source\\repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\Pouya\\Source\\Repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj": {
+    "C:\\Users\\Pouya\\source\\repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pouya\\Source\\Repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\Pouya\\source\\repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj",
         "projectName": "OnlineShopMicroService.CartService.WebApi",
-        "projectPath": "C:\\Users\\Pouya\\Source\\Repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj",
+        "projectPath": "C:\\Users\\Pouya\\source\\repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi\\OnlineShopMicroService.CartService.WebApi.csproj",
         "packagesPath": "C:\\Users\\Pouya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pouya\\Source\\Repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi\\obj\\",
+        "outputPath": "C:\\Users\\Pouya\\source\\repos\\MicroserviceOnlineShop-CartService\\OnlineShopMicroService.CartService.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pouya\\AppData\\Roaming\\NuGet\\NuGet.Config",
